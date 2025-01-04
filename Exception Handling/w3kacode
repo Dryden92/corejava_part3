@@ -1,0 +1,29 @@
+public class Main
+{
+    void meth()
+    {
+        System.out.println("this is first method");
+        
+        try
+        {
+            int arr[]={1,2,3};
+            System.out.println(arr[12]);
+        }
+        catch(Exception e)
+        {
+            System.out.println("catch block is executing");
+            //System.out.println(e.toString());
+            //System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+        finally
+        {
+            System.out.println("last method call");
+        }
+        System.out.println("this is last method");
+    }
+	public static void main(String[] args) 
+	{
+	  new Main().meth();
+	}
+}
