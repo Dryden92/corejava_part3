@@ -1,0 +1,28 @@
+package corejava_part3;
+public class exception
+{
+	void meth()
+	{
+		System.out.println("this is meth1");
+		try
+		{
+			System.out.println("try block executed");
+			System.out.println(10/0);
+		}
+		catch(Exception e)
+		{
+			System.out.println("catch block executed");
+			e.printStackTrace();
+		}
+		finally
+		{
+			System.out.println("finally method");
+		}
+		System.out.println("last method");
+	}
+	public static void main(String[] args)
+	{
+		exception obj=new exception();
+		obj.meth();
+	}
+}
